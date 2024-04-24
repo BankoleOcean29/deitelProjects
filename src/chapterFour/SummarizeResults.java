@@ -28,7 +28,11 @@ public class SummarizeResults {
 
         System.out.println("Number of students that passed are: " + counterForOne);
 
-        System.out.println("Number of students that passed are: " + counterForTwo);
+        System.out.println("Number of students that failed are: " + counterForTwo);
+
+        if (counterForOne > 7){
+            System.out.println("Bonus to instructor!");
+        }
 
 
     }

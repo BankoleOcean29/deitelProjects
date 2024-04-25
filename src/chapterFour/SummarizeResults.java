@@ -33,7 +33,5 @@ public class SummarizeResults {
         if (counterForOne > 7){
             System.out.println("Bonus to instructor!");
         }
-
-
     }
 }

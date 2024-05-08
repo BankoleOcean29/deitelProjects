@@ -6,6 +6,7 @@ public class AccountTest {
     public static void main(String[] args) {
         Account ob = new Account("Kona", 99);
         Account ob2 = new Account("kai", 98);
+        Account ob3 = new Account("j", 67);
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter deposit for your account");

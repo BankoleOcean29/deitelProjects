@@ -1,19 +1,30 @@
 package chapterThree;
 
-public class CustomerOfMoneyBank {
+public class Customer {
 
         private String name;
         private double accountNumber;
         private double id;
+
+        private int schoolId;
         private double accountBalance;
         private int age;
 
-        public CustomerOfMoneyBank(String name, double accountNumber, double id, double accountBalance, int age) {
+        public Customer(String name, double accountNumber, double id, double accountBalance) {
                 this.name = name;
                 this.accountNumber = accountNumber;
-                this.id = id;
+                id = 7777;
                 this.accountBalance = accountBalance;
                 this.age = age;
+        }
+
+        public  Customer(String name, int studentId, double accountBalance){
+                this.name = name;
+                this.accountNumber = accountNumber;
+                this.schoolId = studentId;
+                this.accountBalance = accountBalance;
+                this.age = age;
+
         }
 
         public String getName() {

@@ -2,7 +2,7 @@ package chapterFour;
 
 public class MaximumAndMinimum {
     public static void main(String[] args) {
-        int[] numbers = {};
+        int[] numbers = {8, 5, 9};
         int max = findMaximum(numbers);
         int min = findMinimum(numbers);
 
@@ -13,38 +13,32 @@ public class MaximumAndMinimum {
     }
     public static int findMaximum(int[] arr) {
 
-        try{
-            int max = arr[0];
-            for (int i = 1; i < arr.length; i++) {
-                if (arr[i] > max) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("The array is null or empty.");
+        }
+
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
                     max = arr[i];
                 }
             }
-            return max;
-        }
-
-        catch (ArrayIndexOutOfBoundsException e) {
-            throw new NullPointerException("The array is empty.");
-        }
-
+        return max;
     }
 
     public static int findMinimum(int[] arr) {
 
-        try{
-            int min = arr[0];
-            for (int i = 1; i < arr.length; i++) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("The array is null or empty.");
+        }
+
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
                 if (arr[i] < min) {
                     min = arr[i];
                 }
             }
-            return min;
-        }
-        catch (ArrayIndexOutOfBoundsException e){
-            throw new NullPointerException("The array is empty.");
+        return min;
 
-        }
     }
-
-
 }

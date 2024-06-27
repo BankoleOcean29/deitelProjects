@@ -5,5 +5,7 @@ public class CheckBoardMain {
 
         System.out.println(CheckBoard.rightPascalTriangle('*'));
 
+        System.out.println(CheckBoard.demoMethod("m"));
+
     }
 }

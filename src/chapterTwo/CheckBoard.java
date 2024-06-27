@@ -173,7 +173,6 @@ public class CheckBoard {
             if (counter == 4)
                 stringBuilder.append(three);
         }
-
         stringBuilder.append(System.lineSeparator());
 
         for (int counter = 0; counter < 3; counter++) {
@@ -186,7 +185,6 @@ public class CheckBoard {
         }
 
         stringBuilder.append(System.lineSeparator());
-
         stringBuilder.append(one);
 
         return stringBuilder.toString();
@@ -224,7 +222,9 @@ public class CheckBoard {
                 stringBuilder.append(two);
             if (counter == 3 || counter == 11)
                 stringBuilder.append(three);
-            if (counter == 1 || counter == 2 || counter == 4 || counter == 6 || counter == 8 || counter == 10 || counter == 12 || counter == 13)
+            if (counter == 1 || counter == 2 || counter == 4 ||
+                    counter == 6 || counter == 8 || counter == 10 ||
+                    counter == 12 || counter == 13)
                 stringBuilder.append(space);
         }
 
@@ -239,7 +239,8 @@ public class CheckBoard {
                 stringBuilder.append(three);
             if (counter == 1 || counter == 13)
                 stringBuilder.append(four);
-            if (counter == 2 || counter == 4 || counter == 6 || counter == 8 || counter == 10 || counter == 12)
+            if (counter == 2 || counter == 4 || counter == 6 || counter == 8 ||
+                    counter == 10 || counter == 12)
                 stringBuilder.append(space);
         }
 
@@ -295,7 +296,8 @@ public class CheckBoard {
 
 
     public static String numberChangingPyramid(char one, char two, char three, char four,
-                                               char five, char six, char seven, char eight, char nine, int ten) {
+                                               char five, char six, char seven,
+                                               char eight, char nine, int ten) {
         String space = " ";
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -323,7 +325,6 @@ public class CheckBoard {
             if (counter == 4)
                 stringBuilder.append(six);
         }
-
         stringBuilder.append(System.lineSeparator());
 
         for (int counter = 0; counter < 7; counter++) {
@@ -338,7 +339,6 @@ public class CheckBoard {
             if (counter == 5)
                 stringBuilder.append(ten);
         }
-
         return stringBuilder.toString();
     }
 
@@ -452,7 +452,6 @@ public class CheckBoard {
         }
 
         return stringBuilder.toString();
-
     }
 
 
@@ -1349,6 +1348,13 @@ public static String rightPascalTriangle(char asterisk){
     }
 
     return stringBuilder.toString();
+    }
+
+    public static String demoMethod(String params){
+
+        String result = params + "me";
+
+        return result;
     }
 
 

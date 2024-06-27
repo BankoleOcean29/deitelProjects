@@ -9,6 +9,12 @@ public class Citizen {
     private int nationalIdNumber;
     private String emailAddress;
 
+    private String sexuality = "ourSexuality";
+
+    public static String othername = "Ocean";
+
+
+
 
     public Citizen(String name, int age, int nationalIdNumber, String emailAddress) {
         this.name = name;
@@ -24,6 +30,16 @@ public class Citizen {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String printSex(){
+        String sexuality = "male";
+        return sexuality + this.sexuality;
+    }
+
+    public String printSex(String andAsexuality){
+        String asexual = "yes";
+        return asexual + " indeed";
     }
 
     public int getAge() {

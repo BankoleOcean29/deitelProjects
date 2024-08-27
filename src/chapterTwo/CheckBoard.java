@@ -657,6 +657,59 @@ public class CheckBoard {
         return stringBuilder.toString();
     }
 
+    public static String reverseTriangleStarPattern(char asterisk) {
+        String space = " ";
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int counter = 0; counter <= 9; counter++) {
+            if (counter == 1 || counter == 3 || counter == 5 || counter == 7 || counter == 9)
+                stringBuilder.append(asterisk);
+            else
+                stringBuilder.append(space);
+        }
+
+        stringBuilder.append(System.lineSeparator());
+
+        for (int counter = 0; counter <= 9; counter++) {
+            if (counter == 2 || counter == 4 || counter == 6 || counter == 8)
+                stringBuilder.append(asterisk);
+            else
+                stringBuilder.append(space);
+        }
+
+        stringBuilder.append(System.lineSeparator());
+
+        for (int counter = 0; counter < 9; counter++) {
+            if (counter == 3 || counter == 5 || counter == 7)
+                stringBuilder.append(asterisk);
+            else
+                stringBuilder.append(space);
+        }
+
+        stringBuilder.append(System.lineSeparator());
+
+        for (int counter = 0; counter < 9; counter++) {
+            if (counter == 4 || counter == 6)
+                stringBuilder.append(asterisk);
+            else
+                stringBuilder.append(space);
+        }
+
+        stringBuilder.append(System.lineSeparator());
+
+        for (int counter = 0; counter < 9; counter++) {
+            if (counter == 5)
+                stringBuilder.append(asterisk);
+            else
+                stringBuilder.append(space);
+        }
+
+        stringBuilder.append(System.lineSeparator());
+
+
+        return stringBuilder.toString();
+    }
+
 
     public static String reverseLeftHalfPyramid(char asterisk) {
         String space = " ";
@@ -1353,6 +1406,8 @@ public static String rightPascalTriangle(char asterisk){
     public static String demoMethod(String params){
 
         String result = params + "me";
+
+        String mysql = "name is bankole";
 
         return result;
     }

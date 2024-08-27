@@ -1,19 +1,25 @@
 package chapterSeven;
 
 public class SquareArray {
+    public static int[][] squareArray() {
+        int size = 10; // Since 10x10 = 100
+        int[][] array = new int[size][size];
+        int number = 1;
 
-    public static int[] squareArray() {
-        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < size; i++) {
+            for (int k = 0; k < size; k++) {
+                array[i][k] = number++;
+            }
+        }
+        return array;
+    }
 
-        //int[][][][][] myArray = new int[10][][][][];
-
-        int[] secondArray = new int[10];
-
-        /*for (int counter = 0; counter < secondArray.length; counter++) {
-            secondArray[counter] = counter + 1;
-        }*/
-
-        return secondArray;
-
+    public static void printArray(int[][] array) {
+        for (int[] row : array) {
+            for (int num : row) {
+                System.out.printf("%3d ", num);
+            }
+            System.out.println();
+        }
     }
 }
